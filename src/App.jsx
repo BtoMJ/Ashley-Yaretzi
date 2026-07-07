@@ -1,14 +1,23 @@
-import Music from "./components/Music/Music";
 import Home from "./components/Home/Home";
-import Countdown from "./components/Countdown/Countdown";
+import Event from "./components/Event/Event";
+import Places from "./components/Places/Places";
+import Parents from "./components/Parents/Parents";
+import Carrusel from "./components/Carrusel/Carrusel";
+import Music from "./components/Music/Music";
 import "./App.css";
+import Confirm from "./components/Confirm/Confirm";
+<Parents />;
 
 function App() {
   return (
     <div className="container">
       <div className="info">
         <Home />
-        <Countdown />
+        <Event />
+        <Places />
+        <Parents />
+        <Carrusel />
+        <Confirm />
         <Music />
       </div>
     </div>

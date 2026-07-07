@@ -1,6 +1,9 @@
 @media (320px <= width <= 480px) {
   .carrusel-container {
-    width: 90%;
+    background-image: url("../../assets/bg3.png");
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
 
     .carousel-fade {
       width: 90%;

@@ -36,10 +36,7 @@ function Carrusel() {
           </div>
         ))}
       </div>
-      <p className="cita">
-        Cada foto guarda un momento, cada momento nos acerca al{" "}
-        <i>para siempre</i>.
-      </p>
+      <p className="cita">Pequeños instantes, grandes recuerdos</p>
       <p className="end-title">Te esperamos</p>
     </div>
   );

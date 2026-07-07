@@ -1,0 +1,30 @@
+.event-container {
+  width: 100dvw;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  .event-text {
+    width: 80%;
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-family: "Birthstone", cursive;
+    text-align: center;
+    line-height: 30px;
+    color: var(--text);
+    z-index: 3;
+  }
+
+  .event-image {
+    width: 100%;
+    position: absolute;
+    bottom: -4em;
+    margin-bottom: 1em;
+
+    img {
+      width: 100%;
+    }
+  }
+}
