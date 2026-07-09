@@ -14,16 +14,23 @@ function App() {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
-    const userConfirm = async () => {
-      try {
-        const user = await data.find((person) => person.url === urlCompleta);
-        setUser(user);
-      } catch (error) {
-        console.error("Error al buscar el usuario:", error);
-      }
+    const userConfirm = () => {
+      const user = data.find((person) => person.url === urlCompleta);
+      setUser(user);
     };
     userConfirm();
   }, [urlCompleta]);
+  // useEffect(() => {
+  //   const userConfirm = async () => {
+  //     try {
+  //       const user = await data.find((person) => person.url === urlCompleta);
+  //       setUser(user);
+  //     } catch (error) {
+  //       console.error("Error al buscar el usuario:", error);
+  //     }
+  //   };
+  //   userConfirm();
+  // }, [urlCompleta]);
 
   console.log("User data:", user); // Log the user data to the console
   return (
