@@ -215,8 +215,7 @@ const data = [
     teléfono: "477 559 7659",
     adultos: 6,
     niños: 0,
-    url: "http://localhost:5173/martin-gonzalez",
-    // url: "https://ashley-yaretzi.vercel.app/martin-gonzalez",
+    url: "https://ashley-yaretzi.vercel.app/martin-gonzalez",
   },
   {
     id: 28,

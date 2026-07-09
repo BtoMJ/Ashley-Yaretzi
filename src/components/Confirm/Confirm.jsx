@@ -1,23 +1,23 @@
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
+// import data from "../../data/data";
 import { FaWhatsapp } from "react-icons/fa";
-import data from "../../data/data";
 import "./Confirm.css";
 
-function Confirm() {
-  const urlCompleta = window.location.href;
-  const [user, setUser] = useState(null);
+function Confirm({ user }) {
+  //   const urlCompleta = window.location.href;
+  //   const [user, setUser] = useState(null);
 
-  useEffect(() => {
-    const userConfirm = async () => {
-      try {
-        const user = await data.find((person) => person.url === urlCompleta);
-        setUser(user);
-      } catch (error) {
-        console.error("Error al buscar el usuario:", error);
-      }
-    };
-    userConfirm();
-  }, [urlCompleta]);
+  //   useEffect(() => {
+  //     const userConfirm = async () => {
+  //       try {
+  //         const user = await data.find((person) => person.url === urlCompleta);
+  //         setUser(user);
+  //       } catch (error) {
+  //         console.error("Error al buscar el usuario:", error);
+  //       }
+  //     };
+  //     userConfirm();
+  //   }, [urlCompleta]);
 
   return (
     <section className="confirm-container">
