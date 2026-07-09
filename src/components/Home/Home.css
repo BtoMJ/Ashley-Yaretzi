@@ -54,11 +54,11 @@
 
     .text-1 {
       width: 70%;
-      font-size: 1.8rem;
+      font-size: 2rem;
       font-weight: 500;
       font-family: "Birthstone", cursive;
       text-align: center;
-      line-height: 30px;
+      line-height: 35px;
       color: var(--text);
       z-index: 3;
     }

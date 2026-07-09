@@ -17,7 +17,7 @@ function Confirm() {
       }
     };
     userConfirm();
-  }, []);
+  }, [urlCompleta]);
 
   return (
     <section className="confirm-container">
@@ -27,7 +27,10 @@ function Confirm() {
       <p>¡Muchas Gracias!</p>
       <div className="pase">
         <p className="user-name">{user?.nombre}</p>
-        <p className="pase-count">N° de Personas: {user?.pases}</p>
+        <p className="pase-count">Adultos: {user?.adultos}</p>
+        <p className={user?.niños !== 0 ? "pase-count" : "pase-no-count"}>
+          Niños: {user?.niños}
+        </p>
       </div>
       <a href="#" target="_blank">
         <FaWhatsapp className="whatsapp-icon" /> Confirmar

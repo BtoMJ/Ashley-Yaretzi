@@ -1,4 +1,6 @@
 import { useState, useEffect, useRef } from "react";
+import marcoArriba from "../../assets/marcoArriba.png";
+import marcoAbajo from "../../assets/marcoAbajo.png";
 import "./Carrusel.css";
 
 const slides = [
@@ -29,6 +31,11 @@ function Carrusel() {
 
   return (
     <div className="carrusel-container">
+      <img
+        className="flowers-top"
+        src={marcoArriba}
+        alt="marco superior de flores"
+      />
       <div className="carousel-fade">
         {slides.map((content, i) => (
           <div key={i} className={`fade-slide ${i === index ? "active" : ""}`}>
@@ -36,8 +43,13 @@ function Carrusel() {
           </div>
         ))}
       </div>
+      <img
+        className="flowers-bottom"
+        src={marcoAbajo}
+        alt="marco superior de flores"
+      />
       <p className="cita">Pequeños instantes, grandes recuerdos</p>
-      <p className="end-title">Te esperamos</p>
+      {/* <p className="end-title">Te esperamos</p> */}
     </div>
   );
 }
