@@ -1,23 +1,41 @@
 import { useParams } from "react-router-dom";
-import invitados from "../../data/data";
+import Home from "../Home/Home";
+import Event from "../Event/Event";
+import Places from "../Places/Places";
+import Parents from "../Parents/Parents";
+import Carrusel from "../Carrusel/Carrusel";
+import data from "../../data/data";
+import Confirm from "../Confirm/Confirm";
+import Outfit from "../Outfit/Outfit";
 
 function Invitation() {
-  const { token } = useParams();
+  const { fam } = useParams();
 
-  const invitado = invitados.find((item) => item.token === token);
+  const guest = data.find((item) => item.url === fam);
 
-  if (!invitado) {
+  if (!guest) {
     return <h1>Invitación no encontrada</h1>;
   }
 
   return (
     <>
-      <h1>Bienvenido {invitado.nombre}</h1>
+      <Home />
+      <Event />
+      <Places />
+      <Parents />
+      <Carrusel />
+      <Outfit />
+      <Confirm guest={guest} />
+      {/* <h1>Bienvenido {invitado.nombre}</h1>
 
       <p>
-        Lugares reservados:
+        Adultos:
         {invitado.adultos}
       </p>
+      <p>
+        Niños:
+        {invitado.niños}
+      </p> */}
     </>
   );
 }

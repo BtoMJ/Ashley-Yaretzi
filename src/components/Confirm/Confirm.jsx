@@ -1,23 +1,15 @@
-// import { useEffect, useState } from "react";
-// import data from "../../data/data";
 import { FaWhatsapp } from "react-icons/fa";
 import "./Confirm.css";
 
-function Confirm({ user }) {
-  //   const urlCompleta = window.location.href;
-  //   const [user, setUser] = useState(null);
+function Confirm({ guest }) {
+  const sendToWhatsapp = () => {
+    const message = `${guest?.name} Confirma asistencia al evento`;
 
-  //   useEffect(() => {
-  //     const userConfirm = async () => {
-  //       try {
-  //         const user = await data.find((person) => person.url === urlCompleta);
-  //         setUser(user);
-  //       } catch (error) {
-  //         console.error("Error al buscar el usuario:", error);
-  //       }
-  //     };
-  //     userConfirm();
-  //   }, [urlCompleta]);
+    const phone = "5214761037311";
+
+    const urlWhatsApp = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+    window.open(urlWhatsApp, "_blank");
+  };
 
   return (
     <section className="confirm-container">
@@ -26,15 +18,15 @@ function Confirm({ user }) {
       <p>Favor de confirmar tu asistencia antes del evento.</p>
       <p>¡Muchas Gracias!</p>
       <div className="pase">
-        <p className="user-name">{user?.nombre}</p>
-        <p className="pase-count">Adultos: {user?.adultos}</p>
-        <p className={user?.niños !== 0 ? "pase-count" : "pase-no-count"}>
-          Niños: {user?.niños}
+        <p className="user-name">{guest?.name}</p>
+        <p className="pase-count">Adultos: {guest?.adults}</p>
+        <p className={guest?.kids !== 0 ? "pase-count" : "pase-no-count"}>
+          Niños: {guest?.kids}
         </p>
       </div>
-      <a href="#" target="_blank">
+      <button className="btn-whatsapp" onClick={sendToWhatsapp}>
         <FaWhatsapp className="whatsapp-icon" /> Confirmar
-      </a>
+      </button>
     </section>
   );
 }

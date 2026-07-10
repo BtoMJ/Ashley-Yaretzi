@@ -27,7 +27,10 @@
       .slide-container-1,
       .slide-container-2,
       .slide-container-3,
-      .slide-container-4 {
+      .slide-container-4,
+      .slide-container-5,
+      .slide-container-6,
+      .slide-container-7 {
         width: 90%;
         height: 100%;
       }
@@ -192,7 +195,10 @@
     .slide-container-1,
     .slide-container-2,
     .slide-container-3,
-    .slide-container-4 {
+    .slide-container-4,
+    .slide-container-5,
+    .slide-container-6,
+    .slide-container-7 {
       width: 100%;
       background-size: cover;
     }
@@ -228,25 +234,43 @@
 }
 
 .slide-container-1 {
-  background-image: url("../../assets/slider/1.jpg");
+  background-image: url("../../assets/slider/AshlyXV-1.jpg");
   background-position: top 25% center;
   background-repeat: no-repeat;
 }
 
 .slide-container-2 {
-  background-image: url("../../assets/slider/2.jpeg");
+  background-image: url("../../assets/slider/AshlyXV-2.jpg");
   background-position: center center;
   background-repeat: no-repeat;
 }
 
 .slide-container-3 {
-  background-image: url("../../assets/slider/3.jpg");
+  background-image: url("../../assets/slider/AshlyXV-3.jpg");
   background-position: top 25% center;
   background-repeat: no-repeat;
 }
 
 .slide-container-4 {
-  background-image: url("../../assets/slider/4.jpg");
+  background-image: url("../../assets/slider/AshlyXV-4.jpg");
+  background-position: top 25% center;
+  background-repeat: no-repeat;
+}
+
+.slide-container-5 {
+  background-image: url("../../assets/slider/AshlyXV-5.jpg");
+  background-position: top 25% center;
+  background-repeat: no-repeat;
+}
+
+.slide-container-6 {
+  background-image: url("../../assets/slider/AshlyXV-6.jpg");
+  background-position: top 25% center;
+  background-repeat: no-repeat;
+}
+
+.slide-container-7 {
+  background-image: url("../../assets/slider/AshlyXV-7.jpg");
   background-position: top 25% center;
   background-repeat: no-repeat;
 }

@@ -28,7 +28,8 @@
     color: var(--text);
   }
 
-  a {
+  .btn-whatsapp {
+    border: none;
     display: flex;
     justify-content: center;
     align-items: center;

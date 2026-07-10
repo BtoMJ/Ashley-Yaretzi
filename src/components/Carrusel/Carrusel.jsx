@@ -8,7 +8,9 @@ const slides = [
   <div className="slide-container-2"></div>,
   <div className="slide-container-3"></div>,
   <div className="slide-container-4"></div>,
-  // <div className="slide-container-5"></div>,
+  <div className="slide-container-5"></div>,
+  <div className="slide-container-6"></div>,
+  <div className="slide-container-7"></div>,
 ];
 
 function Carrusel() {
