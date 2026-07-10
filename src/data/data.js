@@ -5,8 +5,10 @@ const data = [
     teléfono: "476 728 4676",
     adultos: 3,
     niños: 0,
-    url: "http://localhost:5173/fam-torres-murguia",
+    url: "fam-torres-murguia",
+    // url: "http://localhost:5173/fam-torres-murguia",
     // url: "https://ashley-yaretzi.vercel.app/fam-torres-murguia",
+    token: "cxh1",
   },
   {
     id: 2,
@@ -16,6 +18,7 @@ const data = [
     niños: 2,
     url: "http://localhost:5173/fam-torres-lopez",
     // url: "https://ashley-yaretzi.vercel.app/fam-torres-lopez",
+    token: "azt7",
   },
   {
     id: 3,
@@ -24,6 +27,7 @@ const data = [
     adultos: 7,
     niños: 0,
     url: "https://ashley-yaretzi.vercel.app/fam-murguia-hernandez",
+    token: "prh4",
   },
   {
     id: 4,
