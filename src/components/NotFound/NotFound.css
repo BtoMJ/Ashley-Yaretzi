@@ -1,0 +1,12 @@
+.not-fouund-container {
+  width: 100dvw;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../assets/bg3.png");
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}

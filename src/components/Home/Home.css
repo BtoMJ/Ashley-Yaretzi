@@ -4,6 +4,7 @@
     background-position: center center;
     background-size: cover;
     position: relative;
+    overflow: hidden;
 
     .flower2 {
       width: 60%;
@@ -29,7 +30,7 @@
         margin-top: 6.5rem;
         margin-left: 3.5rem;
         transform: scaleX(-1);
-        filter: hue-rotate(60deg);
+        filter: hue-rotate(90deg);
       }
 
       h1 {

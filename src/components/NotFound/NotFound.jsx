@@ -1,7 +1,7 @@
 import "./NotFound.css";
 
 function NotFound() {
-  return <div>NotFound</div>;
+  return <div className="not-fouund-container"></div>;
 }
 
 export default NotFound;

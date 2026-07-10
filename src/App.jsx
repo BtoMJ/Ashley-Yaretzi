@@ -1,10 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./components/Home/Home";
 import Music from "./components/Music/Music";
 import Invitation from "./components/Invitation/Invitation";
 import NotFound from "./components/NotFound/NotFound";
 
 import "./App.css";
+import Hero from "./components/Hero/Hero";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <div className="container">
         <div className="info">
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Hero />} />
 
             <Route path="/:fam" element={<Invitation />} />
 

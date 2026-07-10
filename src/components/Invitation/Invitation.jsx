@@ -26,16 +26,6 @@ function Invitation() {
       <Carrusel />
       <Outfit />
       <Confirm guest={guest} />
-      {/* <h1>Bienvenido {invitado.nombre}</h1>
-
-      <p>
-        Adultos:
-        {invitado.adultos}
-      </p>
-      <p>
-        Niños:
-        {invitado.niños}
-      </p> */}
     </>
   );
 }
