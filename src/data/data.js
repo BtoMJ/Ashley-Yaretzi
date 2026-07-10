@@ -73,7 +73,7 @@ const data = [
   },
   {
     id: 10,
-    name: "Norma Murguia y Fam.",
+    name: "Norma Murguía y Fam.",
     phone: "476 160 2615",
     adults: 2,
     kids: 0,
