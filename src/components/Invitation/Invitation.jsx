@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Home from "../Home/Home";
 import Event from "../Event/Event";
 import Places from "../Places/Places";
@@ -7,6 +7,9 @@ import Carrusel from "../Carrusel/Carrusel";
 import data from "../../data/data";
 import Confirm from "../Confirm/Confirm";
 import Outfit from "../Outfit/Outfit";
+import Music from "../Music/Music";
+import envelope from "../../assets/sobre.png";
+import "./Invitation.css";
 
 function Invitation() {
   const { fam } = useParams();
@@ -14,7 +17,15 @@ function Invitation() {
   const guest = data.find((item) => item.url === fam);
 
   if (!guest) {
-    return <h1>Invitación no encontrada</h1>;
+    return (
+      <div className="no-invitation">
+        <img src={envelope} alt="imagen de sobre" />
+        <h2>Invitación no encontrada</h2>
+        <Link className="return" to="/">
+          Volver
+        </Link>
+      </div>
+    );
   }
 
   return (
@@ -26,6 +37,7 @@ function Invitation() {
       <Carrusel />
       <Outfit />
       <Confirm guest={guest} />
+      <Music />
     </>
   );
 }
