@@ -50,8 +50,6 @@ function Carrusel() {
           alt="marco superior de flores"
         />
       </div>
-      {/* <p className="cita">Pequeños instantes, grandes recuerdos</p> */}
-      {/* <p className="end-title">Te esperamos</p> */}
     </div>
   );
 }

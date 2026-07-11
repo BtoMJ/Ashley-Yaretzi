@@ -1,4 +1,5 @@
 import { FaWhatsapp } from "react-icons/fa";
+import florTitle from "../../assets/florTitle.png";
 import "./Confirm.css";
 
 function Confirm({ guest }) {
@@ -14,6 +15,7 @@ function Confirm({ guest }) {
   return (
     <section className="confirm-container">
       <h2> Asistencia</h2>
+      <img className="flor-title" src={florTitle} alt="flor" />
       <p>¡Gracias por acompañarme en este día tan importante!</p>
       <p>Favor de confirmar tu asistencia antes del evento.</p>
       <p>¡Muchas Gracias!</p>

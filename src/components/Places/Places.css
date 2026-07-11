@@ -9,6 +9,10 @@
   background-position: center center;
   background-size: cover;
 
+  @media (320px <= width <= 480px) and (min-height: 741px) {
+    height: 90dvh;
+  }
+
   .place {
     display: flex;
     flex-direction: column;
@@ -58,23 +62,5 @@
     color: var(--bg);
     font-family: "Inter", sans-serif;
     background: linear-gradient(-180deg, #fb9dab 0%, #bb5e6c 100%);
-    /* background: linear-gradient(-180deg, #fb9dab 10%, #dd5c70 100%); */
   }
-
-  /* .places-image {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    top: -7rem;
-    z-index: 10;
-
-    img {
-      width: 100%;
-      object-fit: cover;
-    }
-  } */
 }

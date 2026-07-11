@@ -9,13 +9,31 @@
   background-position: center center;
   background-size: cover;
 
+  @media (320px <= width <= 480px) and (min-height: 741px) {
+    width: 100dvw;
+    height: 85dvh;
+  }
+
   h2 {
     width: 70%;
     text-align: center;
-    line-height: 2.5rem;
     font-size: 3.2rem;
     font-weight: bold;
     font-family: "Ephesis", cursive;
+
+    @media (320px <= width <= 480px) and (min-height: 741px) {
+      font-size: 3.5rem;
+    }
+  }
+
+  .flor-title {
+    width: 60%;
+    margin-top: -4.5rem;
+    margin-bottom: -4rem;
+
+    @media (320px <= width <= 480px) and (min-height: 741px) {
+      margin-top: -5rem;
+    }
   }
 
   p {
@@ -26,6 +44,11 @@
     font-weight: bold;
     font-family: "Inter", sans-serif;
     color: var(--text);
+
+    @media (320px <= width <= 480px) and (min-height: 741px) {
+      font-size: 1.4rem;
+      margin-top: 2rem;
+    }
   }
 
   .btn-whatsapp {
@@ -65,6 +88,10 @@
     background-color: var(--bg);
     box-shadow: 0px 10px 20px -5px rgba(100, 44, 44, 0.3);
 
+    @media (320px <= width <= 480px) and (min-height: 668px) {
+      margin: 3rem 0;
+    }
+
     .pase-image {
       width: 110%;
     }
@@ -75,6 +102,10 @@
       font-weight: 500;
       font-family: "Birthstone", cursive;
       color: var(--text);
+
+      @media (320px <= width <= 480px) and (min-height: 741px) {
+        font-size: 2.3rem;
+      }
     }
 
     .pase-count {
@@ -84,6 +115,10 @@
       font-weight: 500;
       font-family: "Inter", cursive;
       color: var(--text);
+
+      @media (320px <= width <= 480px) and (min-height: 741px) {
+        font-size: 1.3rem;
+      }
     }
 
     .pase-no-count {

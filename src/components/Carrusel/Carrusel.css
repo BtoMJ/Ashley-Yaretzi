@@ -1,9 +1,7 @@
 @media (320px <= width <= 480px) {
   .carrusel-container {
-    background-image: url("../../assets/bg3.png");
-    background-position: center center;
-    background-size: cover;
-    position: relative;
+    width: 100dvw;
+    height: 100dvh;
 
     .flowers-top {
       width: 80%;
@@ -21,8 +19,6 @@
       width: 90%;
       min-height: 500px;
       position: relative;
-      /* margin: 50px 0 30px 0; */
-      /* background-color: var(--bg); */
 
       .slide-container-1,
       .slide-container-2,
@@ -35,16 +31,41 @@
         height: 100%;
       }
     }
+  }
+}
 
-    .cita {
-      width: 90%;
-      font-size: 2rem;
-      margin-bottom: -5px;
+@media (320px <= width <= 480px) and (min-height: 741px) {
+  .carrusel-container {
+    width: 100dvw;
+    height: 90dvh;
+
+    .flowers-top {
+      width: 80%;
+      top: -1.7rem;
+      right: -1.4rem;
     }
 
-    .end-title {
+    .flowers-bottom {
+      width: 80%;
+      bottom: -1.7rem;
+      left: -1.4rem;
+    }
+
+    .carousel-fade {
       width: 90%;
-      font-size: 3rem;
+      min-height: 500px;
+      position: relative;
+
+      .slide-container-1,
+      .slide-container-2,
+      .slide-container-3,
+      .slide-container-4,
+      .slide-container-5,
+      .slide-container-6,
+      .slide-container-7 {
+        width: 90%;
+        height: 100%;
+      }
     }
   }
 }
@@ -180,13 +201,14 @@
 }
 
 .carrusel-container {
-  width: 100dvw;
-  height: 100dvh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* overflow: hidden; */
+  background-image: url("../../assets/bg3.png");
+  background-position: center center;
+  background-size: cover;
+  position: relative;
 
   .carousel-fade {
     width: 80%;

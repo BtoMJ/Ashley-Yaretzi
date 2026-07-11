@@ -6,6 +6,10 @@
   align-items: center;
   position: relative;
 
+  @media (320px <= width <= 480px) and (min-height: 741px) {
+    height: 85dvh;
+  }
+
   .event-text {
     width: 80%;
     font-size: 1.8rem;
@@ -15,6 +19,11 @@
     line-height: 30px;
     color: var(--text);
     z-index: 3;
+
+    @media (320px <= width <= 480px) and (min-height: 741px) {
+      font-size: 2rem;
+      line-height: 35px;
+    }
   }
 
   .event-image {
@@ -22,6 +31,11 @@
     position: absolute;
     bottom: -4em;
     margin-bottom: 1em;
+
+    @media (320px <= width <= 480px) and (min-height: 741px) {
+      bottom: -6em;
+      margin-bottom: 1em;
+    }
 
     img {
       width: 100%;

@@ -10,6 +10,10 @@
   background-size: cover;
   position: relative;
 
+  @media (320px <= width <= 480px) and (min-height: 741px) {
+    height: 70dvh;
+  }
+
   h2 {
     width: 70%;
     text-align: center;

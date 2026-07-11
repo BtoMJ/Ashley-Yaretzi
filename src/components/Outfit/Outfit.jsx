@@ -4,10 +4,10 @@ import "./Outfit.css";
 function Outfit() {
   return (
     <section className="outfit-container">
-      {/* <h2>Código de Vestimenta</h2> */}
-      <h2> Vestimenta</h2>
+      <h2> Código de</h2>
+      <h3> Vestimenta</h3>
       <img className="dress-code-img" src={dress} alt="imagen vestimenta" />
-      <h3>Casual Elegante </h3>
+      <h4>Casual Elegante </h4>
       <p>Evita tonos rosa y lila</p>
     </section>
   );
