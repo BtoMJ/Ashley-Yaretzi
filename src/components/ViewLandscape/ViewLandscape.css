@@ -66,4 +66,8 @@
   @media (orientation: portrait) {
     display: none;
   }
+
+  @media (1280px <= width) {
+    display: none;
+  }
 }
