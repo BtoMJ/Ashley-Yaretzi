@@ -13,7 +13,6 @@ function Music() {
   const [isAudioReady, setIsAudioReady] = useState(false);
 
   useEffect(() => {
-    // Check the context state when the component mounts
     if (audioCtx.state === "suspended") {
       console.log(
         "AudioContext is suspended. Waiting for user interaction to resume.",
@@ -27,16 +26,7 @@ function Music() {
       setIsAudioReady(true);
       console.log("AudioContext resumed successfully.");
       // You can now play your audio here
-      playAudio();
     }
-  };
-
-  const playAudio = () => {
-    // Example of playing a sound (connect your nodes here)
-    // const oscillator = audioCtx.createOscillator();
-    // oscillator.connect(audioCtx.destination);
-    // oscillator.start();
-    console.log("Audio playback started.");
   };
 
   return (

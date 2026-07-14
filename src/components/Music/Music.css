@@ -61,8 +61,9 @@
   background: linear-gradient(-45deg, #fb9dab 0%, #bb5e6c 100%);
   color: var(--bg);
   position: fixed;
-  right: 20px;
+  right: -50px;
   bottom: 20px;
+  animation: fadeInRight 1s ease-in-out 2s forwards;
   z-index: 50;
 }
 
@@ -73,4 +74,14 @@
 
 .btn-music .btn-stop {
   margin-top: 5px;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    right: 20px;
+    opacity: 1;
+  }
 }

@@ -10,6 +10,7 @@ import Outfit from "../Outfit/Outfit";
 import Music from "../Music/Music";
 import envelope from "../../assets/sobre.png";
 import "./Invitation.css";
+import ViewLandscape from "../ViewLandscape/ViewLandscape";
 
 function Invitation() {
   const { fam } = useParams();
@@ -18,13 +19,16 @@ function Invitation() {
 
   if (!guest) {
     return (
-      <div className="no-invitation">
-        <img src={envelope} alt="imagen de sobre" />
-        <h2>Invitación no encontrada</h2>
-        <Link className="return" to="/">
-          Volver
-        </Link>
-      </div>
+      <>
+        <div className="no-invitation">
+          <img src={envelope} alt="imagen de sobre" />
+          <h2>Invitación no encontrada</h2>
+          <Link className="return" to="/">
+            Volver
+          </Link>
+        </div>
+        <ViewLandscape />
+      </>
     );
   }
 
