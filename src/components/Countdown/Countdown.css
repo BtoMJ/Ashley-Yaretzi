@@ -71,7 +71,7 @@
     .number-container {
       gap: 1rem;
       padding: 1rem;
-      margin-top: -10px;
+      margin-top: 50px;
       margin-bottom: 10px;
 
       .number-bg {
@@ -173,23 +173,23 @@
 
 @media (1920px <= width <= 2660px) {
   .countdown-container {
-    gap: 2.5rem;
+    gap: 2rem;
     padding: 1rem;
     margin-top: 50px;
     margin-bottom: 10px;
 
     .number-container {
       .number-bg {
-        width: 80px;
-        height: 80px;
+        width: 70px;
+        height: 70px;
 
         .number {
           font-size: 2.5rem;
         }
 
         .glass {
-          width: 70px;
-          height: 70px;
+          width: 60px;
+          height: 60px;
           top: 5px;
           left: 5px;
         }
@@ -256,12 +256,6 @@
     .number-bg {
       border-radius: 100%;
       background: linear-gradient(-45deg, #fb9dab 0%, #bb5e6c 100%);
-      /* background: linear-gradient(-45deg, #330c15 0%, #ff6c82 80%); */
-      /* background: linear-gradient(
-        -45deg,
-        rgb(116, 4, 180) 0%,
-        rgb(40, 4, 61) 100%
-      ); */
 
       .number {
         font-family: "Marcellus", serif;

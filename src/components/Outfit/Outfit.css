@@ -1,15 +1,36 @@
 .outfit-container {
-  width: 100dvw;
+  width: 100%;
   height: 100dvh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background-image: url("../../assets/bg3.png");
   background-position: center center;
   background-size: cover;
   position: relative;
 
   @media (320px <= width <= 480px) and (min-height: 741px) {
+    height: 85dvh;
+  }
+
+  @media (768px <= width <= 1023px) {
+    height: 80dvh;
+  }
+
+  @media (1024px <= width <= 1279px) {
+    height: 80dvh;
+  }
+
+  @media (1280px <= width <= 1439px) {
+    height: 80dvh;
+  }
+
+  @media (1440px <= width <= 1919px) {
+    height: 70dvh;
+  }
+
+  @media (1920px <= width <= 2600px) {
     height: 85dvh;
   }
 
@@ -21,26 +42,88 @@
     font-size: 3.2rem;
     font-weight: bold;
     font-family: "Ephesis", cursive;
+
+    @media (1024px <= width <= 1199px) {
+      font-size: 3.5rem;
+      line-height: 3rem;
+    }
   }
 
   h3 {
     margin-left: -1.5rem;
   }
 
+  .flor-title {
+    width: 60%;
+    margin-top: -4rem;
+    margin-bottom: -4rem;
+
+    @media (768px <= width <= 1023px) {
+      width: 50%;
+      margin-top: -5.5rem;
+    }
+
+    @media (1024px <= width <= 1279px) {
+      width: 40%;
+      margin-top: -4.55rem;
+    }
+
+    @media (1920px <= width <= 2600px) {
+      width: 40%;
+      margin-top: -4rem;
+    }
+  }
+
   .dress-code-img {
     height: 60%;
     margin-left: -1.5rem;
+
+    @media (768px <= width <= 1023px) {
+      height: 50%;
+    }
+
+    @media (1024px <= width <= 1279px) {
+      height: 55%;
+    }
+
+    @media (1280px <= width <= 1439px) {
+      height: 50%;
+    }
+
+    @media (1440px <= width <= 1919px) {
+      height: 60%;
+    }
+
+    @media (1920px <= width <= 2600px) {
+      height: 60%;
+    }
   }
 
   h4 {
     margin: 1rem;
     font-family: "Inter", sans-serif;
     font-size: 1.5rem;
+
+    @media (1024px <= width <= 1199px) {
+      font-size: 2rem;
+    }
+
+    @media (920px <= width <= 2600px) {
+      font-size: 2rem;
+    }
   }
 
   p {
     font-size: 1.2rem;
     font-weight: 400;
     font-family: "Inter", sans-serif;
+
+    @media (1024px <= width <= 1199px) {
+      font-size: 1.5rem;
+    }
+
+    @media (1920px <= width <= 2600px) {
+      font-size: 1.5rem;
+    }
   }
 }

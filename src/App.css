@@ -61,7 +61,7 @@ a {
   }
 }
 
-@media (1024px <= width <= 1199px) {
+@media (1024px <= width <= 1279px) {
   body {
     background-image: url("./assets/paper.png");
     background-repeat: repeat;
@@ -79,7 +79,7 @@ a {
   }
 }
 
-@media (1200px <= width <= 1919px) {
+@media (1280px <= width <= 1919px) {
   body {
     background-image: url("./assets/paper.png");
     background-repeat: repeat;

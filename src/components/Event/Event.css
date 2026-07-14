@@ -1,5 +1,5 @@
 .event-container {
-  width: 100dvw;
+  width: 100%;
   height: 100dvh;
   display: flex;
   flex-direction: column;
@@ -8,6 +8,26 @@
 
   @media (320px <= width <= 480px) and (min-height: 741px) {
     height: 85dvh;
+  }
+
+  @media (768px <= width <= 1023px) {
+    height: 85dvh;
+  }
+
+  @media (1024px <= width <= 1279px) {
+    height: 75dvh;
+  }
+
+  @media (1280px <= width <= 1439px) {
+    height: 90dvh;
+  }
+
+  @media (1440px <= width <= 1919px) {
+    height: 70dvh;
+  }
+
+  @media (1920px <= width <= 2600px) {
+    height: 100dvh;
   }
 
   .event-text {
@@ -24,6 +44,36 @@
       font-size: 2rem;
       line-height: 35px;
     }
+
+    @media (768px <= width <= 1023px) {
+      width: 60%;
+      font-size: 2.2rem;
+      line-height: 35px;
+    }
+
+    @media (1024px <= width <= 1279px) {
+      width: 60%;
+      font-size: 2.5rem;
+      line-height: 40px;
+    }
+
+    @media (1280px <= width <= 1439px) {
+      width: 65%;
+      font-size: 1.7rem;
+      line-height: 30px;
+    }
+
+    @media (1440px <= width <= 1919px) {
+      width: 70%;
+      font-size: 2rem;
+      line-height: 35px;
+    }
+
+    @media (1920px <= width <= 2600px) {
+      width: 70%;
+      font-size: 2.2rem;
+      line-height: 40px;
+    }
   }
 
   .event-image {
@@ -35,6 +85,22 @@
     @media (320px <= width <= 480px) and (min-height: 741px) {
       bottom: -6em;
       margin-bottom: 1em;
+    }
+
+    @media (768px <= width <= 1023px) {
+      bottom: -5em;
+    }
+
+    @media (1024px <= width <= 1279px) {
+      bottom: -7em;
+    }
+
+    @media (1280px <= width <= 1439px) {
+      bottom: -6em;
+    }
+
+    @media (1440px <= width <= 1919px) {
+      bottom: -6em;
     }
 
     img {
