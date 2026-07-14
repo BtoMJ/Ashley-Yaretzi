@@ -6,13 +6,13 @@
     .flowers-top {
       width: 80%;
       top: -1.7rem;
-      right: -1.4rem;
+      right: -0.4rem;
     }
 
     .flowers-bottom {
       width: 80%;
       bottom: -1.7rem;
-      left: -1.4rem;
+      left: -0.4rem;
     }
 
     .carousel-fade {
@@ -42,13 +42,13 @@
     .flowers-top {
       width: 80%;
       top: -1.7rem;
-      right: -1.4rem;
+      right: -0.4rem;
     }
 
     .flowers-bottom {
       width: 80%;
       bottom: -1.7rem;
-      left: -1.4rem;
+      left: -0.4rem;
     }
 
     .carousel-fade {
@@ -69,14 +69,14 @@
 
     .flowers-top {
       width: 80%;
-      top: -1.7rem;
-      right: -1.4rem;
+      top: -2.2rem;
+      right: -0.4rem;
     }
 
     .flowers-bottom {
       width: 80%;
-      bottom: -1.7rem;
-      left: -1.4rem;
+      bottom: -2.2rem;
+      left: -0.4rem;
     }
 
     .carousel-fade {
@@ -94,14 +94,14 @@
 
     .flowers-top {
       width: 80%;
-      top: -1.7rem;
-      right: -1.4rem;
+      top: -3rem;
+      right: -0.4rem;
     }
 
     .flowers-bottom {
       width: 80%;
-      bottom: -1.7rem;
-      left: -1.4rem;
+      bottom: -3rem;
+      left: -0.4rem;
     }
 
     .carousel-fade {
@@ -120,13 +120,13 @@
     .flowers-top {
       width: 80%;
       top: -1.7rem;
-      right: -1.4rem;
+      right: -0.4rem;
     }
 
     .flowers-bottom {
       width: 80%;
       bottom: -1.7rem;
-      left: -1.4rem;
+      left: -0.4rem;
     }
 
     .carousel-fade {
@@ -143,14 +143,14 @@
 
     .flowers-top {
       width: 80%;
-      top: -1.7rem;
-      right: -1.4rem;
+      top: -2rem;
+      right: -0.4rem;
     }
 
     .flowers-bottom {
       width: 80%;
-      bottom: -1.7rem;
-      left: -1.4rem;
+      bottom: -2rem;
+      left: -0.4rem;
     }
 
     .carousel-fade {
@@ -167,14 +167,38 @@
 
     .flowers-top {
       width: 80%;
-      top: -1.7rem;
-      right: -1.4rem;
+      top: -2.6rem;
+      right: -0.4rem;
     }
 
     .flowers-bottom {
       width: 80%;
-      bottom: -1.7rem;
-      left: -1.4rem;
+      bottom: -2.6rem;
+      left: -0.4rem;
+    }
+
+    .carousel-fade {
+      min-height: 80%;
+      position: relative;
+    }
+  }
+}
+
+@media (2601px <= width) {
+  .carrusel-container {
+    width: 100%;
+    height: 85dvh;
+
+    .flowers-top {
+      width: 80%;
+      top: -5rem;
+      right: -1rem;
+    }
+
+    .flowers-bottom {
+      width: 80%;
+      bottom: -5rem;
+      left: -1rem;
     }
 
     .carousel-fade {
@@ -195,7 +219,7 @@
   position: relative;
 
   .carousel-fade {
-    width: 80%;
+    width: 90%;
 
     .slide-container-1,
     .slide-container-2,

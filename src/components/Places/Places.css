@@ -36,6 +36,10 @@
     height: 90dvh;
   }
 
+  @media (2601px <= width) {
+    height: 80dvh;
+  }
+
   .place {
     display: flex;
     flex-direction: column;
@@ -51,6 +55,10 @@
       margin: 2rem 0;
     }
 
+    @media (2601px <= width) {
+      margin: 4rem 0;
+    }
+
     h2 {
       font-size: 3.2rem;
       font-weight: bold;
@@ -58,6 +66,10 @@
 
       @media (1024px <= width <= 1279px) {
         font-size: 3.5rem;
+      }
+
+      @media (2601px <= width) {
+        font-size: 6rem;
       }
     }
 
@@ -81,6 +93,11 @@
       @media (1920px <= width <= 2600px) {
         width: 45%;
       }
+
+      @media (2601px <= width) {
+        width: 35%;
+        margin-top: -8.5rem;
+      }
     }
 
     h3 {
@@ -90,6 +107,10 @@
 
       @media (1024px <= width <= 1199px) {
         font-size: 1.5rem;
+      }
+
+      @media (2601px <= width) {
+        font-size: 2.5rem;
       }
     }
 
@@ -102,6 +123,10 @@
       @media (1024px <= width <= 1199px) {
         font-size: 1.3rem;
       }
+
+      @media (2601px <= width) {
+        font-size: 2rem;
+      }
     }
 
     p {
@@ -109,6 +134,10 @@
       font-size: 1.5rem;
       font-weight: bold;
       font-family: "Inter", sans-serif;
+
+      @media (2601px <= width) {
+        font-size: 2rem;
+      }
     }
   }
 
@@ -121,5 +150,11 @@
     color: var(--bg);
     font-family: "Inter", sans-serif;
     background: linear-gradient(-180deg, #fb9dab 0%, #bb5e6c 100%);
+
+    @media (2601px <= width) {
+      border-radius: 80px;
+      font-size: 2rem;
+      padding: 1.3rem 2.5rem;
+    }
   }
 }
