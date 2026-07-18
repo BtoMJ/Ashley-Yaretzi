@@ -21,7 +21,9 @@ function Confirm({ guest }) {
       <p>¡Muchas Gracias!</p>
       <div className="pase">
         <p className="user-name">{guest?.name}</p>
-        <p className="pase-count">Adultos: {guest?.adults}</p>
+        <p className={guest?.adults !== 0 ? "pase-count" : "pase-no-count"}>
+          Niños: {guest?.adults}
+        </p>
         <p className={guest?.kids !== 0 ? "pase-count" : "pase-no-count"}>
           Niños: {guest?.kids}
         </p>

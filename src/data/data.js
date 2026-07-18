@@ -463,6 +463,14 @@ const data = [
     kids: 4,
     url: "fam-murguia-sanchez",
   },
+  {
+    id: 59,
+    name: "Fam. Díaz",
+    phone: "868 157 8949",
+    adults: 0,
+    kids: 0,
+    url: "fam-diaz",
+  },
 ];
 
 export default data;
